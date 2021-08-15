@@ -373,19 +373,6 @@ function inputs_init(inputs) {
 						input.setAttribute('type', 'password');
 					}
 				}
-				if (input.classList.contains('_date')) {
-					/*
-					input.classList.add('_mask');
-					Inputmask("99.99.9999", {
-						//"placeholder": '',
-						clearIncomplete: true,
-						clearMaskOnLostFocus: true,
-						onincomplete: function () {
-							input_clear_mask(input, input_g_value);
-						}
-					}).mask(input);
-					*/
-				}
 				if (input.classList.contains('_phone')) {
 					//'+7(999) 999 9999'
 					//'+38(999) 999 9999'
@@ -508,13 +495,6 @@ if (priceSlider) {
 			'max': [200000]
 		}
 	});
-
-	/*
-	const priceStart = document.getElementById('price-start');
-	const priceEnd = document.getElementById('price-end');
-	priceStart.addEventListener('change', setPriceValues);
-	priceEnd.addEventListener('change', setPriceValues);
-	*/
 
 	function setPriceValues() {
 		let priceStartValue;
