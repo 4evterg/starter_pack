@@ -42,7 +42,7 @@ let path = {
 		favicon: src_folder + "/img/favicon.{jpg,png,svg,gif,ico,webp}",
 		html: [src_folder + "/**/*.html", "!" + src_folder + "/_*.html"],
 		js: [src_folder + "/js/app.js", src_folder + "/js/vendors.js"],
-		css: src_folder + "/sass/style.sass",
+		css: [src_folder + "/sass/style.sass", src_folder + "/css/*.css"],
 		images: [src_folder + "/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp}", "!**/favicon.*"],
 		fonts: src_folder + "/fonts/*.ttf",
 		json: src_folder + "/json/**/*.*"
